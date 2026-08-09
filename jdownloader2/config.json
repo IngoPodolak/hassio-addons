@@ -7,7 +7,7 @@
   "arch": ["armv7", "aarch64", "amd64"],
   "startup": "application",
   "boot": "auto",
-  "image": "thedtwo/jd2-homeassistant",
+  "image": "jlesage/jdownloader-2",
   "options": {
     "email": "home@assistant.de",
     "password": "fancy",
