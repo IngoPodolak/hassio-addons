@@ -1,0 +1,42 @@
+name: JDownloader 2 (Web-Oberfläche)
+version: "26.09.1-1"
+slug: jdownloader2_webui
+description: JDownloader 2 mit vollständiger Web-Oberfläche direkt in Home Assistant (wie bei ZimaOS), optional zusätzlich MyJDownloader.
+url: https://github.com/IngoPodolak/hassio-addons/tree/main/jdownloader2_webui
+arch:
+  - amd64
+  - aarch64
+  - armv7
+startup: application
+boot: auto
+init: false
+ingress: true
+ingress_port: 5800
+ingress_stream: true
+panel_icon: mdi:download
+panel_title: JDownloader
+webui: "http://[HOST]:[PORT:5800]"
+map:
+  - addon_config:rw
+  - media:rw
+  - share:rw
+ports:
+  5800/tcp: null
+  3129/tcp: null
+ports_description:
+  5800/tcp: Web-Oberfläche (für Ingress nicht nötig)
+  3129/tcp: MyJDownloader Direktverbindung (optional)
+environment:
+  KEEP_APP_RUNNING: "1"
+  USER_ID: "0"
+  GROUP_ID: "0"
+options:
+  download_path: /media/jdownloader
+  dark_mode: true
+  myjd_device_name: JDownloader Home Assistant
+schema:
+  download_path: str
+  dark_mode: bool
+  myjd_email: str?
+  myjd_password: password?
+  myjd_device_name: str?

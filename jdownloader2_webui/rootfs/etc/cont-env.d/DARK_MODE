@@ -1,0 +1,2 @@
+#!/bin/sh
+if [ "$(jq -r '.dark_mode' /data/options.json 2>/dev/null)" = "false" ]; then echo 0; else echo 1; fi

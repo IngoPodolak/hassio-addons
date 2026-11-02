@@ -1,0 +1,4 @@
+build_from:
+  amd64: jlesage/jdownloader-2:v26.09.1
+  aarch64: jlesage/jdownloader-2:v26.09.1
+  armv7: jlesage/jdownloader-2:v26.09.1
