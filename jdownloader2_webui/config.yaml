@@ -1,5 +1,5 @@
 name: JDownloader 2 (Web-Oberfläche)
-version: "26.09.1-1"
+version: "26.09.1-2"
 slug: jdownloader2_webui
 description: JDownloader 2 mit vollständiger Web-Oberfläche direkt in Home Assistant (wie bei ZimaOS), optional zusätzlich MyJDownloader.
 url: https://github.com/IngoPodolak/hassio-addons/tree/main/jdownloader2_webui
